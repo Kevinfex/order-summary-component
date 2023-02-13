@@ -1,0 +1,19 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.attribution {
+    margin-block: 1.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+
+    a {
+        color: v.$Bright-blue;
+    }
+
+    @include m.media-double-breakpoint-up(v.$screen-sm, min-width, 50em, min-height) {
+        position: fixed;
+        bottom: 0.325rem;
+        width: 100%;
+    }
+
+}

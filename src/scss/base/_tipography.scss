@@ -1,0 +1,47 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+body {
+    font-family: v.$font-primary;
+    font-size: 1.4rem;
+    min-height: 100%;
+    background-color: v.$Pale-blue;
+    background-image: url(../img/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: contain;
+
+    @include m.flex;
+    min-height: 100vh;
+    width: 86%;
+    margin: 0 auto;
+    max-width: 1220px;
+
+    @include m.media-breakpoint-up(v.$screen-sm) {
+        padding-top: 2rem;
+        background-image: url(../img/pattern-background-desktop.svg);
+    }
+}
+
+h1, h2, h3 {
+    font-family: v.$font-primary;
+    font-weight: v.$black;
+    color: v.$Dark-blue;
+}
+h1 {
+    font-size: 2.16rem;
+}
+h2 {
+    font-size: 1.4rem;
+}
+h3 {
+    font-size: 1.2rem;
+}
+p {
+    font-size: 1.6rem;
+    color: v.$Desaturated-blue;
+}

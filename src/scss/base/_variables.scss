@@ -1,0 +1,32 @@
+// Font Family
+$font-primary: "Red Hat Display", sans-serif;
+$regular: 500;
+$bold: 700;
+$black: 900;
+
+// Primary colors
+$Pale-blue: hsl(225, 100%, 94%);
+$Bright-blue: hsl(245, 75%, 52%);
+
+// Neutrals colors
+$Very-pale-blue: hsl(225, 100%, 98%);
+$Desaturated-blue: hsl(224, 23%, 55%);
+$Dark-blue: hsl(223, 47%, 23%);
+$white-color: hsl(0, 0%, 100%);
+
+
+// Breakpoints
+$screen-sm: 36em;       //576px Large smartphones
+$screen-md: 48em;       //768px Small tablets
+$screen-lg: 62em;       //992px Tablets
+$screen-xl: 75em;       //1200px Desktops
+$screen-xxl: 87.5em;    //1400px Large desktops
+$screen-rwd: 89.9375em; //1439px; Custom device
+
+// Border shadow
+$box-shadow: 0.063rem 0.063rem 3.125rem rgba($Dark-blue, 0.12),
+    0 0.063rem 0.125rem rgba($Dark-blue, 0.24);
+$box-shadow-hover: 0 0.875rem 1.75rem rgba($Dark-blue, 0.25), 
+    0 0.625rem 0.625rem rgba($Dark-blue, 0.22);
+$box-shadow-alt: 0 0.875rem 1.75rem rgba($Dark-blue, 0.13), 
+    0 0.625rem 0.625rem rgba($Dark-blue, 0.18);

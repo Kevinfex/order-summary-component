@@ -1,0 +1,45 @@
+@use 'base/variables' as v;
+
+.btn {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    font-weight: v.$bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: block;
+
+    transition-property: background-color, color;
+    transition-duration: .3s;
+}
+
+.btn--primary{
+    background-color: v.$Bright-blue;
+    color: v.$white-color;
+    padding: 1.52rem;
+    margin: 1.92rem 0;
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: v.$box-shadow, v.$box-shadow-alt;
+
+    &:hover {
+        background-color: #766cea;
+    }
+}
+
+.btn--second {
+    color: v.$Desaturated-blue;
+    &:hover {
+        color: v.$Dark-blue;
+    }
+}
+
+.btn--link {
+    font-size: 1.4rem;
+    color: v.$Bright-blue;
+    text-decoration: underline;
+    &:hover {
+        text-decoration: none;
+        color: #766cea;
+    }
+}

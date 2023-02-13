@@ -1,0 +1,245 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.4rem;
+  min-height: 100%;
+  background-color: hsl(225deg, 100%, 94%);
+  background-image: url(../img/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 86%;
+  margin: 0 auto;
+  max-width: 1220px;
+}
+@media screen and (min-width: 36em) {
+  body {
+    padding-top: 2rem;
+    background-image: url(../img/pattern-background-desktop.svg);
+  }
+}
+
+h1, h2, h3 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  color: hsl(223deg, 47%, 23%);
+}
+
+h1 {
+  font-size: 2.16rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1.6rem;
+  color: hsl(224deg, 23%, 55%);
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: block;
+  transition-property: background-color, color;
+  transition-duration: 0.3s;
+}
+
+.btn--primary {
+  background-color: hsl(245deg, 75%, 52%);
+  color: hsl(0deg, 0%, 100%);
+  padding: 1.52rem;
+  margin: 1.92rem 0;
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0.063rem 0.063rem 3.125rem rgba(31, 47, 86, 0.12), 0 0.063rem 0.125rem rgba(31, 47, 86, 0.24), 0 0.875rem 1.75rem rgba(31, 47, 86, 0.13), 0 0.625rem 0.625rem rgba(31, 47, 86, 0.18);
+}
+.btn--primary:hover {
+  background-color: #766cea;
+}
+
+.btn--second {
+  color: hsl(224deg, 23%, 55%);
+}
+.btn--second:hover {
+  color: hsl(223deg, 47%, 23%);
+}
+
+.btn--link {
+  font-size: 1.4rem;
+  color: hsl(245deg, 75%, 52%);
+  text-decoration: underline;
+}
+.btn--link:hover {
+  text-decoration: none;
+  color: #766cea;
+}
+
+.attribution {
+  margin-block: 1.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(245deg, 75%, 52%);
+}
+@media screen and (min-width: 36em) and (min-height: 50em) {
+  .attribution {
+    position: fixed;
+    bottom: 0.325rem;
+    width: 100%;
+  }
+}
+
+.card {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 2rem;
+  overflow: hidden;
+  max-width: 40.2rem;
+}
+.card__banner {
+  width: 100%;
+  display: block;
+}
+.card__content {
+  padding: 3rem 2.5rem;
+  text-align: center;
+}
+.card__description {
+  line-height: 1.5;
+  margin: 1.8rem 0;
+}
+.card__plane {
+  background-color: hsl(225deg, 100%, 98%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.6rem;
+  border-radius: 1rem;
+}
+.card__icon {
+  max-width: 4rem;
+}
+.card__resume {
+  flex-grow: 1;
+  text-align: left;
+}
+.card__price {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+@media screen and (min-width: 36em) {
+  .card__content {
+    padding: 3.2rem;
+  }
+  .card__heading {
+    font-size: 2.6rem;
+  }
+  .card__description {
+    line-height: 1.6;
+  }
+  .card__icon {
+    max-width: 4.8rem;
+  }
+  .card__type, .card__price {
+    font-size: 1.6rem;
+  }
+}
